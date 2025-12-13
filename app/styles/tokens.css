@@ -1,0 +1,48 @@
+@layer base {
+  :root {
+    /* Base */
+    --background: 255 255 255;
+    --foreground: 17 24 39;
+
+    /* Brand (placeholder por ahora) */
+    --primary: 37 99 235;
+    --primary-foreground: 255 255 255;
+
+    /* UI */
+    --muted: 243 244 246;
+    --muted-foreground: 107 114 128;
+    --border: 229 231 235;
+  }
+
+  /* Dark automático (sin next-themes todavía) */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: 10 10 10;
+      --foreground: 245 245 245;
+
+      --muted: 24 24 27;
+      --muted-foreground: 161 161 170;
+      --border: 39 39 42;
+    }
+  }
+
+  body {
+    background: rgb(var(--background));
+    color: rgb(var(--foreground));
+  }
+}
+
+@layer utilities {
+  /* Utilities semánticas para no usar valores raros en JSX */
+  .bg-background { background-color: rgb(var(--background)); }
+  .text-foreground { color: rgb(var(--foreground)); }
+
+  .text-primary { color: rgb(var(--primary)); }
+  .bg-primary { background-color: rgb(var(--primary)); }
+  .text-primary-foreground { color: rgb(var(--primary-foreground)); }
+
+  .bg-muted { background-color: rgb(var(--muted)); }
+  .text-muted-foreground { color: rgb(var(--muted-foreground)); }
+
+  .border-border { border-color: rgb(var(--border)); }
+}

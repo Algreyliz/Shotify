@@ -6,10 +6,11 @@ const WHATSAPP_URL = "https://wa.me/50662439362";
 
 export function Hero() {
   return (
+    
     <section className="bg-background">
-      {/* Contenedor general */}
+      
       <div className="w-full pb-10">
-        {/* Imagen alta + botón solapado */}
+       
         <div className="relative w-full h-[70vh]">
           <Image
             src={HeroImage}
@@ -18,8 +19,6 @@ export function Hero() {
             className="object-cover"
             priority
           />
-
-          {/* CTA gigante, metido en la imagen y bajando un poco */}
           <div className="absolute left-1/2 -bottom-7 -translate-x-1/2 z-10 w-full max-w-md px-6">
             <Button
               asChild
@@ -39,20 +38,20 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Texto bajo el hero */}
-        <div className="mx-auto w-full max-w-md px-6 pt-20 space-y-5">
-          {/* Título */}
-          <h1 className="text-4xl font-semibold leading-[1.1]">
+        
+        <div className="mx-auto w-full max-w-md px-6 pt-11 space-y-5">
+         
+          <h1 className="text-center text-4xl font-semibold leading-[1.1]">
             Tu día en un shot.
           </h1>
 
-          {/* Copy */}
+         
           <p className="text-sm leading-relaxed text-muted-foreground">
             Un boost rápido, natural y delicioso para arrancar el día o levantar
             la tarde. Escribinos por WhatsApp y coordinamos la entrega.
           </p>
 
-          {/* Línea informativa pequeña */}
+          
           <p className="text-[11px] text-muted-foreground">
             Shots funcionales · Cold pressed · Hechos en Costa Rica
           </p>

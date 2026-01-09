@@ -30,17 +30,6 @@ export function MainHeader() {
             <SheetHeader>
               <SheetTitle>Shótify</SheetTitle>
             </SheetHeader>
-            <nav className="mt-6 flex flex-col gap-3 text-sm">
-              <Link href="#hero" className="hover:underline">
-                Inicio
-              </Link>
-              <Link href="#best-sellers" className="hover:underline">
-                Best sellers
-              </Link>
-              <Link href="#how-to-buy" className="hover:underline">
-                Cómo comprar
-              </Link>
-            </nav>
           </SheetContent>
         </Sheet>
 
@@ -58,7 +47,7 @@ export function MainHeader() {
 
         {/* Placeholder a la derecha (para futuro) */}
         <div className="hidden md:block text-xs text-muted-foreground">
-          Tu día en un shot.
+        
         </div>
       </div>
     </header>

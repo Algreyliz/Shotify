@@ -85,9 +85,11 @@ export function BestSellers() {
                         ))}
                       </ul>
 
-                      <p className="pt-2 text-sm font-semibold">
-                        Now <span>{product.price}</span>
-                      </p>
+                      <div className="pt-2 space-y-1 text-sm font-semibold">
+  {product.price.map((p) => (
+    <p key={p}>{p}</p>
+  ))}
+</div>
                     </div>
 
                     <Button

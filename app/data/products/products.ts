@@ -30,7 +30,7 @@ export const bestSellers: Product[] = [
       "Cúrcuma + pimienta negra + sal marina",
       "Energía limpia y apoyo al sistema inmune",
     ],
-    imageSrc: "/antiinfla.jpg",
+    imageSrc: "/Antiinfla.jpg",
   },
   {
     id: "red-recovery",
@@ -42,7 +42,7 @@ export const bestSellers: Product[] = [
       "Apoya hemoglobina y oxigenación",
       "Ideal para entrenos intensos o cansancio",
     ],
-    imageSrc: "/recovery.jpg",
+    imageSrc: "/Recovery.jpg",
   },
   {
     id: "pure-energizante",
@@ -78,6 +78,6 @@ export const bestSellers: Product[] = [
       "Refrescante, digestivo y antioxidante",
       "Alternativa a bebidas azucaradas",
     ],
-    imageSrc: "/shotea.jpeg",
+    imageSrc: "/ShoTea.jpeg",
   },
 ]
